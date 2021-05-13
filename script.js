@@ -1,3 +1,8 @@
+const c =(el) => document.querySelector(el)
+const cs = (el) => document.querySelectorAll(el)
+
 pizzaJson.map((item, index) => {
-console.log(item)
+ let pizzaItem = c('.models .pizza-item').cloneNode(true) //c=document.querySelector
+
+    c('.pizza-area').append(pizzaItem)
 })
